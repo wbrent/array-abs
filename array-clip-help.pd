@@ -1,0 +1,18 @@
+#N canvas 187 232 779 456 12;
+#X text 114 210 set the array being referenced;
+#X obj 454 329 array define -k array-clip-help 16;
+#A 0 0.746673 0.786673 0.726672 0.293332 -0.506682 -0.880022 -0.813354 -0.453348 -0.333346 -0.320012 -0.473348 -0.506682 -0.346679 0.066661 0.226664 0.21333;
+#X obj 454 359 array define -k array-clip-help-2 12;
+#A 0 0.826674 -0.873345 0.726666 -0.646664 -0.846667 0.720001 -0.466661 -0.886666 0.846667 0.613336 -0.826694 -0.880028;
+#X msg 117 240 set array-clip-help-2;
+#X msg 152 284 set array-clip-help;
+#X text 624 409 array-abs v0.0.0;
+#X msg 401 200 -0.75 0.2;
+#X obj 61 140 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X text 58 38 upon receiving a bang \, [array-clip] limits all values in the currently referenced array according to the lower and upper limit values specified at creation. limit values can be changed on the fly by passing a 2-element list to the 2nd inlet.;
+#X obj 61 364 array-clip array-clip-help -0.9 0.8;
+#X text 399 170 change the lower/upper limits;
+#X connect 3 0 9 0;
+#X connect 4 0 9 0;
+#X connect 6 0 9 1;
+#X connect 7 0 9 0;

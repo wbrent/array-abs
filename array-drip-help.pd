@@ -1,0 +1,17 @@
+#N canvas 194 316 733 369 12;
+#X text 160 128 set the array being referenced;
+#X obj 424 239 array define -k array-drip-help 16;
+#A 0 0.760002 0.740002 0.553332 0.159992 -0.160013 -0.76669 -0.640022 -0.473352 -0.306683 -0.133346 0.0199896 -0.180014 -0.240015 -0.0333446 -0.160013 -0.453352;
+#X obj 424 269 array define -k array-drip-help-2 12;
+#A 0 -0.233347 0.253328 0.193327 -0.273348 0.159993 0.139992 -0.400017 -0.0866781 0.326662 0.126659 -0.233347 -0.173346;
+#X obj 31 274 array-drip array-drip-help;
+#X msg 163 158 set array-drip-help-2;
+#X msg 198 202 set array-drip-help;
+#X text 594 329 array-abs v0.0.0;
+#X obj 31 99 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X text 28 18 upon receiving a bang \, [array-drip] outputs all values in the currently referenced array one at a time as quickly as possible.;
+#X obj 31 298 print;
+#X connect 3 0 9 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 7 0 3 0;

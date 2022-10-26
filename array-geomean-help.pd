@@ -1,0 +1,17 @@
+#N canvas 194 316 733 369 12;
+#X text 160 128 set the array being referenced;
+#X obj 424 239 array define -k array-geomean-help 16;
+#A 0 0.840002 0.619998 0.693333 0.526663 0.399994 0.506663 0.593331 0.473329 0.766667 0.800001 0.74 0.459995 0.559997 0.753334 0.913336 0.92667;
+#X obj 424 269 array define -k array-geomean-help-2 12;
+#A 0 0.846669 0.773335 0.693333 0.626665 0.566664 0.526664 0.486663 0.433329 0.373328 0.313327 0.146657 0.0866562;
+#X obj 31 274 array-geomean array-geomean-help;
+#X msg 163 158 set array-geomean-help-2;
+#X msg 198 202 set array-geomean-help;
+#X text 594 329 array-abs v0.0.0;
+#X obj 31 99 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X floatatom 31 308 10 0 0 0 - - - 0;
+#X text 28 18 upon receiving a bang \, [array-geomean] outputs the geometric mean of the currently referenced array.;
+#X connect 3 0 8 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 7 0 3 0;

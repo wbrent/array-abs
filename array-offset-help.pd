@@ -1,0 +1,18 @@
+#N canvas 194 217 779 456 12;
+#X text 271 137 set the array being referenced;
+#X obj 454 319 array define -k array-offset-help 16;
+#A 0 0.746673 0.786673 0.726672 0.293332 -0.506682 -0.880022 -0.813354 -0.453348 -0.333346 -0.320012 -0.473348 -0.506682 -0.346679 0.066661 0.226664 0.21333;
+#X obj 454 349 array define -k array-offset-help-2 12;
+#A 0 -0.78 -0.746666 -0.699998 -0.646664 -0.599997 -0.519995 -0.466661 -0.379993 -0.279991 -0.159989 -0.0333203 0.0333475;
+#X msg 274 167 set array-offset-help-2;
+#X msg 309 211 set array-offset-help;
+#X obj 61 304 array-offset array-offset-help;
+#X msg 61 190 -0.1;
+#X msg 91 220 0.07;
+#X text 59 160 offset value;
+#X text 624 409 array-abs v0.0.0;
+#X text 58 38 [array-offset] adds the incoming offset value at its 1st inlet to all values in the currently referenced array;
+#X connect 3 0 5 0;
+#X connect 4 0 5 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 0;

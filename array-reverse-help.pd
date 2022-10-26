@@ -1,0 +1,15 @@
+#N canvas 194 217 773 398 12;
+#X text 149 124 set the array being referenced;
+#X text 611 336 array-abs v0.0.0;
+#X obj 48 281 array-reverse array-reverse-help;
+#X msg 152 154 set array-reverse-help-2;
+#X msg 187 198 set array-reverse-help;
+#X obj 441 246 array define -k array-reverse-help 16;
+#A 0 -0.653356 -0.473353 -0.213348 0.0199889 0.186658 0.319994 0.366661 0.439996 0.526664 0.593332 0.686667 -1.14441e-05 -0.200015 0.0199889 0.333328 0.379995;
+#X obj 441 276 array define -k array-reverse-help-2 12;
+#A 0 -0.0200003 0.440007 0.753346 0.533342 -0.720012 -0.433341 0.220004 0.666678 0.860015 0.886682 0.860015 0.840014;
+#X obj 48 101 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X text 45 35 upon receiving a bang \, [array-reverse] reverses the order of elements in the currently referenced array.;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 7 0 2 0;

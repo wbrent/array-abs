@@ -1,0 +1,15 @@
+#N canvas 194 217 745 405 12;
+#X text 129 203 set the array being referenced;
+#X text 583 356 array-abs v0.0.0;
+#X obj 37 177 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X msg 132 233 set array-abs-val-help-2;
+#X msg 167 277 set array-abs-val-help;
+#X obj 427 113 array define -k array-abs-val-help 16;
+#A 0 -0.700002 -0.466665 0.640021 0.460018 -0.133326 -0.6 -0.0866584 0.92 0 -0.88 -0.833333 0 0.780008 -0.340007 -0.74668 -0.74668;
+#X obj 427 143 array define -k array-abs-val-help-2 12;
+#A 0 0 0.913349 -0.360006 -0.593344 -0.913349 -0.813347 -0.546676 0.733346 0.773346 0.0866679 -0.58001 -0.840014;
+#X obj 37 347 array-abs-val array-abs-val-help;
+#X text 34 31 upon receiving a bang \, [array-abs-val] takes the absolute value of all values in the currently referenced array.;
+#X connect 2 0 7 0;
+#X connect 3 0 7 0;
+#X connect 4 0 7 0;
