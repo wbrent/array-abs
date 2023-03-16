@@ -61,13 +61,13 @@
 #X obj 484 319 array define array-nearest-help 16;
 #X obj 484 349 array define array-nearest-help-2 12;
 #X obj 61 304 array-nearest array-nearest-help;
-#X text 624 409 array-abs v0.0.0;
 #X obj 61 142 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X text 58 38 [array-nearest] receives a query value at its 1st inlet and searches for the nearest value in the currently referenced array. it returns the nearest value and its index via the 1st and 2nd outlets.;
+#X text 624 409 array-abs v0.0.1;
 #X connect 2 0 3 0;
 #X connect 3 0 10 0;
 #X connect 5 0 10 0;
 #X connect 6 0 10 0;
 #X connect 10 0 0 0;
 #X connect 10 1 1 0;
-#X connect 12 0 2 0;
+#X connect 11 0 2 0;

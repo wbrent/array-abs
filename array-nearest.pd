@@ -1,4 +1,4 @@
-#N canvas 196 309 491 613 12;
+#N canvas 156 318 491 613 12;
 #X obj 47 44 inlet;
 #X obj 47 498 outlet;
 #X obj 187 302 array size \$1;
@@ -26,9 +26,11 @@
 #X msg 314 274 resize \$1;
 #X obj 314 324 array define \$0-array-nearest-diffs;
 #X obj 314 160 t b s;
+#X obj 99 154 t f b;
+#X text 155 154 since target table size may have cahnged after initialization, f 20;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
-#X connect 1 1 3 0;
+#X connect 1 1 10 0;
 #X connect 4 0 2 0;
 #X connect 4 0 9 0;
 #X connect 5 0 6 0;
@@ -36,6 +38,8 @@
 #X connect 7 0 8 0;
 #X connect 9 0 6 0;
 #X connect 9 1 6 1;
+#X connect 10 0 3 0;
+#X connect 10 1 6 0;
 #X restore 47 74 pd message-parsing;
 #X obj 47 182 array min \$0-array-nearest-diffs;
 #X obj 187 546 array set \$0-array-nearest-diffs;

@@ -21,9 +21,11 @@
 #X msg 314 274 resize \$1;
 #X obj 314 324 array define \$0-array-std-diffs;
 #X obj 314 160 t b s;
+#X text 155 154 since target table size may have cahnged after initialization, f 20;
+#X obj 99 154 t b b;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
-#X connect 1 1 3 0;
+#X connect 1 1 11 0;
 #X connect 4 0 2 0;
 #X connect 4 0 9 0;
 #X connect 5 0 6 0;
@@ -31,6 +33,8 @@
 #X connect 7 0 8 0;
 #X connect 9 0 6 0;
 #X connect 9 1 6 1;
+#X connect 11 0 3 0;
+#X connect 11 1 6 0;
 #X restore 33 52 pd message-parsing;
 #X obj 173 554 array set \$0-array-std-diffs;
 #X obj 33 96 t b b b;

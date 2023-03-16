@@ -66,10 +66,10 @@
 #X obj 324 279 array define array-std-help 16;
 #X obj 324 309 array define array-std-help-2 12;
 #X obj 51 264 array-std array-std-help;
-#X text 464 369 array-abs v0.0.0;
 #X obj 51 102 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X text 48 38 upon receiving a bang \, [array-std] calculates the standard deviation of the currently referenced array.;
+#X text 464 369 array-abs v0.0.1;
 #X connect 2 0 7 0;
 #X connect 3 0 7 0;
 #X connect 7 0 0 0;
-#X connect 9 0 7 0;
+#X connect 8 0 7 0;
