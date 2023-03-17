@@ -1,0 +1,17 @@
+#N canvas 174 260 779 456 12;
+#X text 114 210 set the array being referenced;
+#X text 624 409 array-abs v0.1.0;
+#X obj 454 329 array define -k array-rerange-help 16;
+#A 0 0.0479998 0.0960002 0.0400001 0.252 0.54 0.592 0 0.072 0.408 0.76 0.712 0.504 0.584 0.548 1 0.872;
+#X obj 454 359 array define -k array-rerange-help-2 12;
+#A 0 0.406673 0.233337 0.186669 0 0.24667 0.146669 0.100001 0.093334 0.173336 0.193336 0.173336 0.160002;
+#X msg 91 150 -0.75 0.2;
+#X msg 61 120 0 1;
+#X msg 152 284 set array-rerange-help;
+#X msg 117 240 set array-rerange-help-2;
+#X text 58 38 upon receiving a 2-element list of lower and upper limits \, [array-rerange] scales all values in the currently referenced array proportionally between the specified limits (inclusive).;
+#X obj 61 364 array-rerange array-rerange-help;
+#X connect 4 0 9 0;
+#X connect 5 0 9 0;
+#X connect 6 0 9 0;
+#X connect 7 0 9 0;
