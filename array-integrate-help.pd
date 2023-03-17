@@ -1,11 +1,10 @@
 #N canvas 194 217 745 405 12;
 #X text 129 203 set the array being referenced;
 #X obj 37 177 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
-#X text 583 356 array-abs v0.0.1;
 #X msg 132 233 set array-integrate-help-2;
 #X msg 167 277 set array-integrate-help;
 #X obj 427 163 array define -k array-integrate-help 16;
-#A 0 0.629 0.292 0.019 0.355 0.116 0.54 0.727 0.538 0.646 0.03 0.754 0.419 0.265 0.455 0.605 0.252;
+#A 0 0.727 0.654 0.758 0.886 0.614 0.505 0.939 0.18 0.881 0.808 0.132 0.178 0.107 0.543 0.763 0.566;
 #X obj 427 193 array define -k array-integrate-help-2 12;
 #A 0 0.858 0.756 0.705 0.397 0.788 0.497 0.916 0.495 0.243 0.012 0.731 0.312;
 #X obj 37 347 array-integrate array-integrate-help;
@@ -66,6 +65,7 @@
 #X connect 21 0 22 0;
 #X restore 427 133 pd init;
 #X text 34 31 upon receiving a bang \, [array-integrate] accumulates values in the currently referenced array such that the new value_i = value_i + value_i-1 . . . value_0. this is useful to convert an array of inter onset durations to the total duration at any given time step.;
-#X connect 1 0 7 0;
-#X connect 3 0 7 0;
-#X connect 4 0 7 0;
+#X text 583 356 array-abs v0.1.0;
+#X connect 1 0 6 0;
+#X connect 2 0 6 0;
+#X connect 3 0 6 0;
