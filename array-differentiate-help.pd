@@ -63,9 +63,9 @@
 #A 0 0.858 0.756 0.705 0.397 0.788 0.497 0.916 0.495 0.243 0.012 0.731 0.312;
 #X obj 37 347 array-differentiate array-differentiate-help;
 #X msg 167 277 set array-differentiate-help;
-#X msg 132 233 set array-differentiatee-help-2;
 #X text 34 31 upon receiving a bang \, [array-differentiate] gets the difference of neighboring values in the currently referenced array such that the new value_i = value_i - value_i-1.;
 #X text 583 356 array-abs v0.1.0;
+#X msg 132 233 set array-differentiate-help-2;
 #X connect 1 0 5 0;
 #X connect 6 0 5 0;
-#X connect 7 0 5 0;
+#X connect 9 0 5 0;
