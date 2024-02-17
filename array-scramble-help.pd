@@ -1,8 +1,7 @@
-#N canvas 194 217 778 413 12;
+#N canvas 384 251 797 409 12;
 #X text 151 179 set the array being referenced;
-#X text 624 359 array-abs v0.0.0;
 #X obj 454 119 array define -k array-scramble-help 12;
-#A 0 -0.813348 -0.733347 -0.640012 -0.553344 -0.420008 -0.29334 -0.173338 0.0199991 0.166668 0.293337 0.560008 0.733344;
+#A 0 -0.420008 -0.553344 -0.173338 -0.640012 0.560008 0.0199991 -0.29334 -0.733347 0.293337 0.166668 -0.813348 0.733344;
 #X obj 454 149 array define -k array-scramble-help-2 15;
 #A 0 0.7 0.626665 0.506663 0.386661 0.259993 0.133324 -0.0200122 -0.0800132 -0.113347 -0.166681 -0.226682 -0.306684 -0.473353 -0.66669 -0.760025;
 #X msg 189 253 set array-scramble-help;
@@ -10,9 +9,12 @@
 #X obj 61 144 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X msg 229 293 seed 2829;
 #X text 307 293 set the random seed;
-#X obj 61 354 array-scramble array-scramble-help 149;
 #X text 58 38 upon receiving a bang \, [array-scramble] randomizes the order of values in the currently referenced array. the 2nd (optional) creation argument sets the random seed value for this process \, which can be changed on the fly via the "seed" message., f 50;
-#X connect 4 0 9 0;
-#X connect 5 0 9 0;
-#X connect 6 0 9 0;
-#X connect 7 0 9 0;
+#X text 624 359 array-abs v0.0.1;
+#X msg 239 323 seed 149;
+#X obj 61 354 array-scramble array-scramble-help 149;
+#X connect 3 0 11 0;
+#X connect 4 0 11 0;
+#X connect 5 0 11 0;
+#X connect 6 0 11 0;
+#X connect 10 0 11 0;
